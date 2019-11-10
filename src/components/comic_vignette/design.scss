@@ -4,9 +4,95 @@
 
 .principal{
     height: 300px;
-    border: 6px solid #ffffff;
+    border: 7px solid #ffffff;
     width: auto;
+    transition: height 2s;
 }
+
+.principal:hover{
+    height: 350px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+.fa:hover {
+    opacity: 0.7;
+ }
+ .socialblock{
+     display: none;
+ }
+ .principal:hover .socialblock{
+     display: block;
+ }
+.social{
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    transition: visibility 5s, opacity 0.5s linear;
+}
+.principal:hover .social{
+    visibility: visible;
+    opacity: 1;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.fa-github {
+    background: #000000;
+    color: white;
+}
+.fa-instagram {
+    background: linear-gradient(45deg, #f6df0d,#e2900c, #b60974, #8604f0,#2d0390);;
+    color: white;
+}
+
+.back1{
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(214, 42, 36) 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position: fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+    //max-width: 351px;
+    // height: 350px;
+    // margin-top: 10px;
+    // margin-lef: 10px;
+}
+
+.back2{
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+}
+
+.back3 {
+    animation-duration:5s;
+  }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
 
 .title{
     margin:auto;
@@ -20,9 +106,10 @@ h1{
     text-transform: uppercase;
     font-size: 8em;
     white-space: nowrap;
-    font-size: 9vw;
+    font-size: 8vw;
     z-index: 1000;
     font-family: 'Bangers', cursive;
     text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.7);
 }
+
 

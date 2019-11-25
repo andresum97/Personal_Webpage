@@ -1,3 +1,33 @@
 body{
-    background-color: rgb(6, 54, 109);   
+    //background-color: rgb(6, 54, 109);
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.comic{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vmin;
+}
+
+.comic > div >div{
+    //flex-basis: 400px;
+    min-width: 500px;
+  }
+.comic > div:nth-child(2n+1) > div{
+    background-image:radial-gradient(circle, yellow, orange);
+} 
+
+.comic > div:nth-child(2n+2) > div{
+    background-image:radial-gradient(circle, rgb(87, 161, 185), rgb(27, 120, 151));
+} 
+.comic > div:nth-child(2n+3) > div{
+    background-image:radial-gradient(circle, rgb(243, 104, 80),rgb(158, 43, 43));
+}
+.comic > div:nth-child(2n+4) > div{
+    background-image:radial-gradient(circle, rgb(80, 160, 80), rgb(44, 122, 18));
+}
+.comic > div:nth-child(2n+5) > div{
+    background-image:radial-gradient(circle, rgb(200, 144, 80), rgb(218, 125, 19));
 }

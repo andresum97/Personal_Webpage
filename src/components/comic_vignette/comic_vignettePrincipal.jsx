@@ -13,9 +13,11 @@ class ComicVignettePrincipal extends Component{
         return(
             <div className="principal" >
                 <div className="contain">
-                    <div className="back1"></div>
-                    <div className="back1 back2"></div>
-                    <div className="back1 back3"></div>
+                    <div className="prueba">
+                        <div className="back1"></div>
+                        <div className="back1 back2"></div>
+                        <div className="back1 back3"></div>
+                    </div>
                     <div className="title"> 
                         <h1>
                             {title}
@@ -24,10 +26,21 @@ class ComicVignettePrincipal extends Component{
                 </div>
                 <div className="socialblock">
                     <div className="social">
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                        <a href="#" class="fa fa-github"></a>
-                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" className="fa fa-facebook">
+                            <span className="fatooltiptext">Alberto Andres Urizar</span>
+                        </a>
+                        <a href="#" className="fa fa-linkedin">
+                            <span className="fatooltiptext">Andres Urizar</span>
+                        </a>
+                        <a href="#" className="fa fa-github">
+                            <span className="fatooltiptext">andresum97</span>
+                        </a>
+                        <a href="#" className="fa fa-instagram">
+                            <span className="fatooltiptext">andresum_97</span>
+                        </a>
+                        <a href="#" className="fa fa-whatsapp">
+                            <span className="fatooltiptext">+502 4762-2485</span>
+                        </a>
                     </div>
                 </div>
             </div>

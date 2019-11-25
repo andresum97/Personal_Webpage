@@ -4,9 +4,14 @@
 
 .principal{
     height: 300px;
-    border: 7px solid #ffffff;
-    width: auto;
+    border: 10px solid #000000;
+    border-left: 15px solid #000000;
+    border-right: 15px solid #000000;
+    width: 101.2%;
+    margin-top: -8px;
+    margin-left: -8px;
     transition: height 2s;
+    box-sizing: border-box;
 }
 
 .principal:hover{
@@ -19,14 +24,43 @@
     width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px 7px;
     border-radius: 50%;
   }
 .fa:hover {
     opacity: 0.7;
  }
+ .fa .fatooltiptext{
+     visibility: hidden;
+     width: auto;
+     background: black;
+     color: #fff;
+     text-align: center;
+     border-radius: 6px;
+     padding: 7px 4px;
+     position: absolute;
+     z-index: 1;
+     font-size: 1vw;
+     margin-top: 55px;
+     margin-left: -30px;
+ }
+ 
+//  .fa .fatooltiptext::after{
+//     content: "";
+//     position: absolute;
+//     bottom: 100%;
+//     left: 50%;
+//     margin-left: -15px;
+//     border-width: 5px;
+//     border-style: solid;
+//     border-color: transparent transparent black transparent;
+//  }
+ .fa:hover .fatooltiptext{
+    visibility: visible;
+}
  .socialblock{
-     display: none;
+     //display: none;
+     margin: 0 35%;
  }
  .principal:hover .socialblock{
      display: block;
@@ -36,8 +70,7 @@
     opacity: 0;
     display: flex;
     flex-direction: row;
-    margin-left: 50%;
-    transition: visibility 5s, opacity 0.5s linear;
+    transition: visibility 5s, opacity 1.2s linear;
 }
 .principal:hover .social{
     visibility: visible;
@@ -59,43 +92,55 @@
     background: linear-gradient(45deg, #f6df0d,#e2900c, #b60974, #8604f0,#2d0390);;
     color: white;
 }
+.fa-whatsapp{
+    background: #25d366;
+    color: white;
+}
 
 .back1{
     animation:slide 3s ease-in-out infinite alternate;
     background-image: linear-gradient(-60deg, rgb(214, 42, 36) 50%, #09f 50%);
     bottom:0;
-    left:-50%;
+    left:-40%;
     opacity:.5;
-    position: fixed;
-    right:-50%;
+    position: absolute;
+    right:-40%;
     top:0;
     z-index:-1;
     //max-width: 351px;
-    // height: 350px;
+    height: 301px;
+    transition: height 2s;
     // margin-top: 10px;
     // margin-lef: 10px;
+}
+
+.principal:hover .back1{
+    height: 350px;
 }
 
 .back2{
     animation-direction:alternate-reverse;
     animation-duration:4s;
+
 }
 
 .back3 {
     animation-duration:5s;
+
   }
 
   @keyframes slide {
     0% {
-      transform:translateX(-25%);
+      transform:translateX(-20%);
     }
-    100% {
-      transform:translateX(25%);
+    80% {
+      transform:translateX(20%);
     }
   }
 
 .title{
-    margin:auto;
+    margin: auto;
+    margin-bottom: -40px;
     width: 50%;   
 }
 

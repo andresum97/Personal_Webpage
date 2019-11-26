@@ -9,22 +9,22 @@ ReactDOM.render(
     document.getElementById('title')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="" texttop="Conocimientos"/>,
+    <Comic_panel textbottom="" texttop="Conocimientos" principalText="Colegio Suizo Americano"/>,
     document.getElementById('panel1')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="prueba" texttop="" />,
+    <Comic_panel textbottom="prueba" texttop=""  principalText="" />,
     document.getElementById('panel2')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="prueba2" texttop="" />,
+    <Comic_panel textbottom="prueba2" texttop=""  principalText="" />,
     document.getElementById('panel3')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="prueba" texttop="" />,
+    <Comic_panel textbottom="prueba" texttop=""   principalText="" />,
     document.getElementById('panel4')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="prueba"  texttop="prueba" />,
+    <Comic_panel textbottom="prueba"  texttop="prueba"  principalText="" />,
     document.getElementById('panel5')
 )

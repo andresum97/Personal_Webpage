@@ -7,11 +7,12 @@ class Comic_panel extends Component{
         super(props);
     }
     render(){
-        const {texttop,textbottom} = this.props;
+        const {texttop,textbottom, principalText} = this.props;
         return(
             <div className="panel">
                 <TextTop text={texttop} />
                 <TextBottom text={textbottom} />
+                <PrincipalText text={principalText} />
             </div>
         )
     }
@@ -34,6 +35,19 @@ function TextBottom(props) {
     return (
         <div>
             <p className="text bottom-text">{props.text}</p>
+        </div>
+    );
+}
+
+function PrincipalText(props) {
+    if(Object.keys(props.text).length == 0){
+        return null;
+    }
+    return(
+        <div className="principaltext">
+            <span>
+                {props.text}
+            </span>
         </div>
     );
 }

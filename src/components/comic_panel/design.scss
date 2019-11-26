@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
 .panel{
     background-color: #ffffff;
     border: solid 5px #000;
@@ -9,3 +11,26 @@
     overflow: hidden;
     position: relative;
 }
+
+.text {
+    background-color:#fff;
+    border:solid 2px #000;
+    margin:0;
+    padding:3px 10px;
+    font-size: 2vw;
+    font-family: 'Bangers', cursive;
+  }
+
+  .top-text {
+    left:-6px;
+    position:absolute;
+    top:-2px;
+    transform:skew(-15deg);
+  }
+  
+  .bottom-text{
+    bottom:-2px;
+    position:absolute;
+    right:-6px;
+    transform:skew(-15deg);
+  }

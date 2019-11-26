@@ -45,9 +45,9 @@ function PrincipalText(props) {
     }
     return(
         <div className="principaltext">
-            <span>
+            <p>
                 {props.text}
-            </span>
+            </p>
         </div>
     );
 }

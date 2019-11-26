@@ -9,7 +9,7 @@ ReactDOM.render(
     document.getElementById('title')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="" texttop="Conocimientos" principalText="Colegio Suizo Americano"/>,
+    <Comic_panel textbottom="" texttop="Educación" principalText= 'Primaria, Secundaria y Diversificado  Colegio Suizo Americano. Graduado en Bachillerato en Computación Universidad: Universidad del Valle 3er año en Ing. Ciencias de la Computación' />,
     document.getElementById('panel1')
 )
 ReactDOM.render(

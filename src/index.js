@@ -17,14 +17,18 @@ ReactDOM.render(
     document.getElementById('panel2')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="Experiencia laboral" texttop="" graph="0" principalText=""  />,
+    <Comic_panel textbottom="" texttop="" graph="0" principalText=""  />,
     document.getElementById('panel3')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="Conocimientos" texttop="" graph="1"  principalText=""  />,
+    <Comic_panel textbottom="" texttop="Conocimientos" graph="1"  principalText=""  />,
     document.getElementById('panel4')
 )
 ReactDOM.render(
-    <Comic_panel textbottom="y me define"  texttop="lo que me gusta" graph="0" principalText="" />,
+    <Comic_panel textbottom="Experiencia laboral" texttop="" graph="0" principalText="Practicas realizadas en Tigo en departamento de Tigo People - 2016/ Software Development en Pacifiko.com - 2019" />,
     document.getElementById('panel5')
+)
+ReactDOM.render(
+    <Comic_panel textbottom="y me define"  texttop="lo que me gusta" graph="0" principalText="" />,
+    document.getElementById('panel6')
 )

@@ -31,7 +31,9 @@ function GraphComponent(props){
         return null;
     }
     return(
-        <BarChart />
+        <div className="graphpadding">
+            <BarChart />
+        </div>
     )
 }
 

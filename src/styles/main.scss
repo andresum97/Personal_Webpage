@@ -16,9 +16,18 @@ body{
 .comic > #panel2 > div{
     width: 550px;
 }
+.comic > #panel3 > div{
+    width: 130px;
+}
+.comic > #panel4 > div{
+    width: 730px;
+}
+.comic > #panel5 > div{
+    width: 520px;
+}
 .comic > div >div{
     //flex-basis: 400px;
-    min-width: 400px;
+    min-width: 100px;
   }
 .comic > div:nth-child(2n+1) > div{
     background-image:radial-gradient(circle, yellow, orange);
@@ -37,5 +46,10 @@ body{
     background-image:radial-gradient(circle, rgb(200, 144, 80), rgb(218, 125, 19));
 }
 .backchart{
-    background-color: #ffffff ;
+    background-color: #000000;
+    //position: absolute;
+    // width: 350px;
+    // height: 200px;
+    // top: 10%;
+    left: 7%;
 }

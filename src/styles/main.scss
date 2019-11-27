@@ -79,6 +79,15 @@ body{
 .comic > div:nth-child(2n+4) > div{
     background-image:radial-gradient(circle, rgb(243, 104, 80),rgb(158, 43, 43));
 }
+.comic > div:nth-child(5n) > div{
+    background-image:radial-gradient(circle, rgb(87, 161, 185), rgb(27, 120, 151));
+} 
+.comic > div:nth-child(3n+4) > div{
+    background-image:radial-gradient(circle, yellow, orange);
+} 
+.comic > div:nth-child(4) > div{
+    background-image:radial-gradient(circle, rgb(243, 104, 80),rgb(158, 43, 43));
+}
 // .comic > div:nth-child(2n+5) > div{
 //     background-image:radial-gradient(circle, rgb(200, 144, 80), rgb(218, 125, 19));
 // }

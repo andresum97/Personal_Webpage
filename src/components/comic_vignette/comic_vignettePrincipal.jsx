@@ -26,16 +26,16 @@ class ComicVignettePrincipal extends Component{
                 </div>
                 <div className="socialblock">
                     <div className="social">
-                        <a href="#" className="fa fa-facebook">
+                        <a href="https://www.facebook.com/albertoandres.urizar" className="fa fa-facebook">
                             <span className="fatooltiptext">Alberto Andres Urizar</span>
                         </a>
-                        <a href="#" className="fa fa-linkedin">
+                        <a href="https://www.linkedin.com/in/andres-urizar-53b87a18a/" className="fa fa-linkedin">
                             <span className="fatooltiptext">Andres Urizar</span>
                         </a>
-                        <a href="#" className="fa fa-github">
+                        <a href="https://github.com/andresum97" className="fa fa-github">
                             <span className="fatooltiptext">andresum97</span>
                         </a>
-                        <a href="#" className="fa fa-instagram">
+                        <a href="https://www.instagram.com/andres_um97/?hl=es-la" className="fa fa-instagram">
                             <span className="fatooltiptext">andresum_97</span>
                         </a>
                         <a href="#" className="fa fa-whatsapp">

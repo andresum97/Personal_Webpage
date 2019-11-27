@@ -39,11 +39,11 @@ ReactDOM.render(
     document.getElementById('panel6-1')
 )
 ReactDOM.render(
-    <Comic_examples webpage="http://msdeus.site/17632/lab08/" textbottom="Trabajos realizados" texttop="" widthframe="545" heightframe="295" />,
+    <Comic_examples webpage="http://msdeus.site/17632/lab04/" textbottom="Dibujo solamente con CSS" texttop="" widthframe="545" heightframe="295" />,
     document.getElementById('panel7')
 )
 ReactDOM.render(
-    <Comic_examples webpage="http://msdeus.site/17632/proyecto01/" textbottom="Trabajos realizados" texttop="" widthframe="1230" heightframe="425" />,
+    <Comic_examples webpage="http://msdeus.site/17632/proyecto01/" textbottom="Copia de la pagina de Disney Orlando" texttop="" widthframe="1230" heightframe="425" />,
     document.getElementById('panel8')
 )
 ReactDOM.render(

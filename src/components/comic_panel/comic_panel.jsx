@@ -14,7 +14,6 @@ class Comic_panel extends Component{
         if(graph == "1"){
             this.graphvalue = true;
         }
-        console.log(this.graphvalue);
         return(
             <div className="panel">
                 <TextTop text={texttop} />

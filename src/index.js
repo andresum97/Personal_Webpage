@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ComicVignettePrincipal from './components/comic_vignette/comic_vignettePrincipal.jsx';
 import Comic_panel from './components/comic_panel/comic_panel.jsx';
+import Comic_examples from './components/comic_examples/comic_examples.jsx';
 
 ReactDOM.render(
     <ComicVignettePrincipal title="Andrés Urízar" color="#D83D2C" graph="0"/>,
@@ -31,4 +32,12 @@ ReactDOM.render(
 ReactDOM.render(
     <Comic_panel textbottom="y me define"  texttop="lo que me gusta" graph="0" principalText="" />,
     document.getElementById('panel6')
+)
+ReactDOM.render(
+    <Comic_examples webpage="http://msdeus.site/17632/lab08/" textbottom="Trabajos realizados" texttop="" />,
+    document.getElementById('panel7')
+)
+ReactDOM.render(
+    <Comic_examples webpage="http://msdeus.site/17632/proyecto01/" textbottom="Trabajos realizados" texttop="" />,
+    document.getElementById('panel8')
 )

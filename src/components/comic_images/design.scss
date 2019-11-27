@@ -7,8 +7,14 @@
     padding: 10px;
     height: auto;
     border: solid 2px #000;
-    transform:skew(-15deg);
+    transform:skew(-5deg);
     position: absolute;
     top: 20%;
     left: 15%;
+}
+
+img{
+    width: 280px;
+    height: 200px;
+    transform: skew(0deg);
 }

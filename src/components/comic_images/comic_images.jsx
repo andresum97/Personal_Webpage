@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import './design.scss';
-import BarChart from "../graph/graphbar.jsx";
 
 
-class Comic_panel extends Component{
+
+class Comic_images extends Component{
     constructor(props){
         super(props);
         this.graphvalue = false;
@@ -46,6 +46,7 @@ function PrincipalImage(props) {
     if(Object.keys(props.text).length == 0){
         return null;
     }
+    console.log(props.text);
     return(
         <div className="principaltext">
             <img src={props.text} alt="image"/>
@@ -53,4 +54,4 @@ function PrincipalImage(props) {
     );
 }
 
-export default Comic_panel;
+export default Comic_images;

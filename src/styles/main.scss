@@ -10,10 +10,15 @@ body{
     flex-wrap: wrap;
     padding: 1vmin;
 }
-
+.comic > #panel1 > div{
+    width: 550px;
+}
+.comic > #panel2 > div{
+    width: 550px;
+}
 .comic > div >div{
     //flex-basis: 400px;
-    min-width: 500px;
+    min-width: 400px;
   }
 .comic > div:nth-child(2n+1) > div{
     background-image:radial-gradient(circle, yellow, orange);
@@ -30,4 +35,7 @@ body{
 }
 .comic > div:nth-child(2n+5) > div{
     background-image:radial-gradient(circle, rgb(200, 144, 80), rgb(218, 125, 19));
+}
+.backchart{
+    background-color: #ffffff ;
 }

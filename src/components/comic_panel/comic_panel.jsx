@@ -1,21 +1,38 @@
 import React, { Component } from "react";
 import './design.scss';
+import '../graph/graphbar.jsx'
+import BarChart from "../graph/graphbar.jsx";
 
 
 class Comic_panel extends Component{
     constructor(props){
         super(props);
+        this.graphvalue = false;
     }
     render(){
-        const {texttop,textbottom, principalText} = this.props;
+        const {texttop,textbottom, principalText,graph} = this.props;
+        if(graph == "1"){
+            this.graphvalue = true;
+        }
+        console.log(this.graphvalue);
         return(
             <div className="panel">
                 <TextTop text={texttop} />
                 <TextBottom text={textbottom} />
                 <PrincipalText text={principalText} />
+                <GraphComponent value={this.graphvalue} />
             </div>
         )
     }
+}
+
+function GraphComponent(props){
+    if(!props.value){
+        return null;
+    }
+    return(
+        <BarChart />
+    )
 }
 
 function TextTop(props) {
@@ -45,9 +62,9 @@ function PrincipalText(props) {
     }
     return(
         <div className="principaltext">
-            <p>
+            <span>
                 {props.text}
-            </p>
+            </span>
         </div>
     );
 }

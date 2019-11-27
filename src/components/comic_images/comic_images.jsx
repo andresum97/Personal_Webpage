@@ -1,39 +1,26 @@
 import React, { Component } from "react";
 import './design.scss';
+import BarChart from "../graph/graphbar.jsx";
 
-class Comic_examples extends Component{
+
+class Comic_panel extends Component{
     constructor(props){
         super(props);
+        this.graphvalue = false;
     }
     render(){
-        const {webpage,texttop,textbottom,widthframe,heightframe} = this.props;
-        console.log(webpage);
-        const iframe = '<iframe src="'+webpage+'" height="'+heightframe+'" width="'+widthframe+'"></iframe>';
-        console.log(iframe);
+        const {texttop,textbottom, images} = this.props;
         return(
             <div className="panel">
                 <TextTop text={texttop} />
                 <TextBottom text={textbottom} />
-                <WebFrame page={iframe} />
+                <PrincipalImage text={images} />
             </div>
         )
     }
 }
 
-function createFrame(text) {
-    return {__html: text};
-}
 
-function WebFrame(props) {
-    if(Object.keys(props.page).length == 0){
-        return null;
-    }
-    return (
-        <div className="framechart">
-            <div dangerouslySetInnerHTML={createFrame(props.page)} />
-        </div>
-    );
-}
 function TextTop(props) {
     if(Object.keys(props.text).length == 0){
         return null;
@@ -55,5 +42,15 @@ function TextBottom(props) {
     );
 }
 
+function PrincipalImage(props) {
+    if(Object.keys(props.text).length == 0){
+        return null;
+    }
+    return(
+        <div className="principaltext">
+            <img src={props.text} alt="image"/>
+        </div>
+    );
+}
 
-export default Comic_examples;
+export default Comic_panel;

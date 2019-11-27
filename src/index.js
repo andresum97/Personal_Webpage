@@ -34,10 +34,10 @@ ReactDOM.render(
     document.getElementById('panel6')
 )
 ReactDOM.render(
-    <Comic_examples webpage="http://msdeus.site/17632/lab08/" textbottom="Trabajos realizados" texttop="" />,
+    <Comic_examples webpage="http://msdeus.site/17632/lab08/" textbottom="Trabajos realizados" texttop="" widthframe="545" heightframe="295" />,
     document.getElementById('panel7')
 )
 ReactDOM.render(
-    <Comic_examples webpage="http://msdeus.site/17632/proyecto01/" textbottom="Trabajos realizados" texttop="" />,
+    <Comic_examples webpage="http://msdeus.site/17632/proyecto01/" textbottom="Trabajos realizados" texttop="" widthframe="1245" heightframe="425" />,
     document.getElementById('panel8')
 )

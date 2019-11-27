@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import './design.scss';
-import '../graph/graphbar.jsx'
 import BarChart from "../graph/graphbar.jsx";
 
 
